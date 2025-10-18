@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Articraft.uz — Home, Ranklar, Qoidalar</title>
+<style>
+  /* --- Orqa fon va xira yozuv --- */
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+    background: radial-gradient(circle at bottom, #0a0a1a, #000);
+    overflow-x: hidden;
+    position: relative;
+  }
+  body::before {
+    content: "ARTICRAFT.UZ";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    letter-spacing: 10px;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* --- Umumiy dizayn --- */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    padding: 12px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav .brand {
+    font-weight: 900;
+    font-size: 20px;
+    background: linear-gradient(90deg, #FFD24D, #FF4D4D);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  nav .links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 700;
+  }
+  nav .links a:hover {
+    color: #FFD24D;
+  }
+  .tg-link {
+    background: linear-gradient(90deg, #0ea5e9, #2563eb);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #FFD24D;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .col {
+    flex: 1 1 300px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .col h3 {
+    margin-top: 0;
+    color: #FFD24D;
+  }
+  .item { margin: 8px 0; }
+  .item span { color: #fff; }
+
+  .rank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .rank {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 300px;
+    background: rgba(255,255,255,0.04);
+    padding: 10px 16px;
+    border-radius: 10px;
+  }
+  .color-box {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+  }
+  .rank span { font-weight: 700; font-size: 16px; }
+
+  .imperator { background: #FFD24D; }
+  .general { background: #8B4513; }
+  .afsona { background: linear-gradient(90deg, #FFA500, #FFD24D); }
+  .elita { background: linear-gradient(90deg, #FF69B4, #8A2BE2); }
+  .titan { background: #FF4D4D; }
+  .alpomish { background: linear-gradient(90deg, #3B82F6, #7A3CFF); }
+  .ritsar { background: #3B82F6; }
+  .qahramon { background: linear-gradient(90deg, #3B82F6, #2ECC71); }
+  .askar { background: #9AD6FF; }
+
+  .rules {
+    line-height: 1.6;
+    font-size: 17px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 25px;
+  }
+  .rules h3 {
+    color: #FFD24D;
+    margin-top: 30px;
+  }
+  .rules p { margin: 8px 0; }
+
+  @media (max-width: 700px) {
+    .columns { flex-direction: column; }
+    .rank { width: 100%; max-width: 320px; }
+  }
+
+  .links-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .yt-link, .donate-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+  .yt-link { background: linear-gradient(90deg, #ff0000, #ff4444); }
+  .donate-link { background: linear-gradient(90deg, #FFD24D, #FF4D4D); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">articraft.uz</div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#ranklar">Ranklar</a>
+    <a href="#rules">Server Qoidalari</a>
+  </div>
+  <a href="https://t.me/articraftmc" target="_blank" class="tg-link">Telegram Guruh</a>
+</nav>
+
+<section id="home">
+  <h2>ARTICRAFT SERVER MA'LUMOTLARI</h2>
+  <div class="columns">
+    <div class="col">
+      <h3>Ownerlar & Adminlar</h3>
+      <div class="item"><b style="color:red;">Owner</b> <span>0_husan_0</span></div>
+      <div class="item"><b style="color:red;">Owner</b> <span>0_misterio_0</span></div>
+      <div class="item"><b style="color:red;">Admin</b> <span>_artifact</span></div>
+      <div class="item"><b style="color:red;">Admin</b> <span>Condonings</span></div>
+    </div>
+
+    <div class="col">
+      <h3>Moderlar</h3>
+      <div class="item"><b style="color:orange;">ST.MODER</b> <span>Muha_PvPcmbk</span></div>
+      <div class="item"><b style="color:orange;">ST.MODER</b> <span>rashidow17</span></div>
+      <div class="item"><b style="color:skyblue;">MODER</b> <span>SmixjoonYT</span></div>
+      <div class="item"><b style="color:skyblue;">MODER</b> <span>dovronbek_</span></div>
+    </div>
+
+    <div class="col">
+      <h3 style="color:pink;">Medialar</h3>
+      <div class="item"><b style="color:pink;">MEDIA</b> <span>ENDRUX_uzb</span></div>
+      <div class="item"><b style="color:pink;">MEDIA</b> <span>Elnurbe</span></div>
+      <div class="item"><b style="color:pink;">MEDIA</b> <span>SHOXMONEY</span></div>
+      <div class="item"><b style="color:pink;">MEDIA</b> <span>SHOXNOTFALL_</span></div>
+    </div>
+  </div>
+
+  <div class="links-section">
+    <a href="https://t.me/articraftmc" target="_blank" class="tg-link">Telegram Guruh</a>
+    <a href="https://www.youtube.com/@Articraftuz-o2y" target="_blank" class="yt-link">YouTube Kanal</a>
+    <a href="https://t.me/Articraft_admin" target="_blank" class="donate-link">Donate sotib olish uchun</a>
+  </div>
+</section>
+
+<section id="ranklar">
+  <h2>RANKLAR</h2>
+  <div class="rank-container">
+    <div class="rank"><div class="color-box imperator"></div><span>Imperator</span></div>
+    <div class="rank"><div class="color-box general"></div><span>General</span></div>
+    <div class="rank"><div class="color-box afsona"></div><span>Afsona</span></div>
+    <div class="rank"><div class="color-box elita"></div><span>Elita</span></div>
+    <div class="rank"><div class="color-box titan"></div><span>Titan</span></div>
+    <div class="rank"><div class="color-box alpomish"></div><span>Alpomish</span></div>
+    <div class="rank"><div class="color-box ritsar"></div><span>Ritsar</span></div>
+    <div class="rank"><div class="color-box qahramon"></div><span>Qahramon</span></div>
+    <div class="rank"><div class="color-box askar"></div><span>Askar</span></div>
+  </div>
+</section>
+
+<section id="rules">
+  <h2>SERVER QOIDALARI</h2>
+  <div class="rules">
+    <h3>1. Asosiy qoidalar</h3>
+    <p>1.1. Serverdagi barcha o‘yinchilar teng huquqli.</p>
+    <p>1.2. Har qanday chit, x-ray — man etiladi. > 30 kun ban</p>
+    <p>1.3. Lag, dupe yoki bug ishlatish — cheksiz ban.</p>
+    <p>1.4. Moderator yoki admin so‘zini inkor etish — 3 kun ban.</p>
+    <p>1.5. “Qoida bilmaslik” — javobgarlikdan ozod qilmaydi.</p>
+    <p>1.6. PvP paytida /spawn, /home, /tpa orqali qochish — man etilmagan.</p>
+    <p>1.7. Boshqa o‘yinchilarga zarar yetkazish — 1 kun ban.</p>
+    <p>1.8. Serverda tartib, adolat va hurmat saqlanishi shart.</p>
+    <p>1.9. Server fayliga zarar yetkazish — cheksiz ban.</p>
+    <p>1.10. Admin qarori — yakuniy.</p>
+
+    <h3>2. Chat qoidalari</h3>
+    <p>2.1. So‘kinish, haqorat, diniy yoki milliy kamsitish — 5 soat mute yoki ban.</p>
+    <p>2.2. Spam, flood, CAPS bilan yozish — 2 soat mute.</p>
+    <p>2.3. Reklama, link, IP yoki boshqa server nomini yozish — cheksiz ban.</p>
+    <p>2.4. Moderator yoki adminni haqoratlash — 10 kun ban.</p>
+    <p>2.5. Shaxsiy ma’lumot so‘rash yoki tarqatish — man etilgan.</p>
+    <p>2.6. Oila a’zolaridan so‘kinish — 3 kun ban.</p>
+    <p>2.7. Chatda madaniyatli muloqotga ruxsat beriladi.</p>
+
+    <h3>3. O‘yin qoidalari</h3>
+    <p>3.1. 3 kishidan ko‘p jamoa bilan PvP — 5 kun ban.</p>
+    <p>3.2. Bug, lag, dupe orqali foyda olish — cheksiz ban.</p>
+    <p>3.3. Teleport trap — man etilmagan.</p>
+    <p>3.4. Lag keltiruvchi qurilma yasash — ban.</p>
+    <p>3.5. Eventlarda tartibni buzish — ban.</p>
+    <p>3.6. Aldab savdo qilish — server javobgar emas.</p>
+
+    <h3>4. Akkaunt qoidalari</h3>
+    <p>4.1. O‘yinchi cheksiz akkaunt ocholadi.</p>
+    <p>4.2. Akkauntni sotish yoki berish — ban.</p>
+    <p>4.3. Parolni hech kimga bermang.</p>
+    <p>4.4. Narsalar yo‘qolsa — o‘yinchi javobgar.</p>
+    <p>4.5. Nickda haqorat yoki reklama — ban.</p>
+    <p>4.6. O‘g‘irlangan akkauntlar bloklanadi.</p>
+    <p>4.7. /register va /login orqali himoya qiling.</p>
+
+    <h3>5. Tekshiruv (Proverka)</h3>
+    <p>5.1. Moderator tekshiruvga chaqiradi.</p>
+    <p>5.2. Tekshiruvdan qochish — 30 kun ban.</p>
+    <p>5.3. Fayl yashirish — 35 kun ban.</p>
+    <p>5.4. RustDesk/AnyDesk orqali ruxsat kerak.</p>
+    <p>5.5. Dalil topilsa — 30 kun ban.</p>
+    <p>5.6. Qochgan — “cheater” ro‘yxatiga kiritiladi.</p>
+    <p>5.7. Moderatorga bosim yoki tahdid — ban.</p>
+    <p>5.8. Toza o‘yinchi — tiklanadi.</p>
+
+    <h3>6. Donat qoidalari</h3>
+    <p>6.1. Donat to‘lovlari qaytarilmaydi.</p>
+    <p>6.2. Donatni sotish yoki berish — ban.</p>
+    <p>6.3. Donater ham barcha qoidalarga bo‘ysunadi.</p>
+  </div>
+</section>
+
+</body>
+</html>
